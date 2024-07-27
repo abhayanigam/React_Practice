@@ -37,6 +37,29 @@ export default function Navbar(props) {
               </a>
             </li>
           </ul>
+
+          <button
+            type="button"
+            class="btn btn-outline-success mx-1"
+            onClick={props.toggleMode1}
+          >
+            Green Mode
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-danger mx-1"
+            onClick={props.toggleMode3}
+          >
+            Red Mode
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-warning mx-1"
+            onClick={props.toggleMode2}
+          >
+            Yellow Mode
+          </button>
+
           <div
             className={`form-check form-switch mx-5 text-${
               props.mode === "light" ? "dark" : "light"
